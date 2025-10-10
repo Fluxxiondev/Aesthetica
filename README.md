@@ -58,3 +58,17 @@ With a clean, minimal interface and smooth transitions, it’s an elegant showca
 - Build a **visually stunning** app focused purely on **frontend polish**.  
 - Encourage contributors to work on **animations**, **UI components**, and **interactive elements**.  
 - Serve as an excellent **portfolio project** for React Native developers.  
+
+---
+
+## Authentication (Supabase)
+
+This project includes a basic Supabase Auth integration (email/password). To enable it:
+
+1. Copy `.env.example` to `.env` and fill `SUPABASE_URL` and `SUPABASE_ANON_KEY`.
+2. Install new dependencies: `npm install @supabase/supabase-js @reduxjs/toolkit react-redux @react-native-async-storage/async-storage`
+3. Run the app with `npm start`.
+
+Files added/changed for auth: `lib/supabaseClient.ts`, `store/*`, `app/(auth)/*`, `app/_layout.tsx`, `app/(tabs)/profile.tsx`.
+
+Notes: The Supabase client reads values from environment variables. In Expo you can use `app.config.js` or `expo-cli` env injection for local testing.
