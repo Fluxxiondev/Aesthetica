@@ -15,6 +15,10 @@ export const palette = {
   warning: "#FFC65A",
   danger: "#FF6B6B",
 
+
+
+  bg1: "#6d28d9",
+  bg2: "#0ea5e9",
   // Surface & content
   background: "#0E131A",
   surface: "#121923",
@@ -25,6 +29,8 @@ export const palette = {
   text: "#E6EDF5",
   textSecondary: "#ACB7C4",
   muted: "#7D8CA1",
+  // text input 
+  inputBg: '#fff',
 
   // Borders & dividers
   border: "#1E2733",
