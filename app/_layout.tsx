@@ -54,6 +54,7 @@ export default function RootLayout() {
 
   return (
     <Provider store={store}>
+      <SafeAreaProvider>
         <ThemeProvider value={NavigationDarkTheme}>
           <StatusBar style="light" />
           <Stack initialRouteName="index" screenOptions={{ headerShown: false }}>
@@ -61,6 +62,7 @@ export default function RootLayout() {
             <Stack.Screen name="(auth)" options={{ headerShown: false }} />
           </Stack>
         </ThemeProvider>
+      </SafeAreaProvider>
     </Provider>
   );
 }
